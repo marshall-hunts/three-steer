@@ -84,7 +84,7 @@ Entity = function (mesh) {
 
 }
 
-Entity.prototype = Object.assign(Object.create(THREE.Group.prototype), {
+Entity.prototype = Object.assign(Object.create(new THREE.Group.prototype), {
     constructor: Entity,
 
     update: function () {
